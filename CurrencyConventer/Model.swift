@@ -28,13 +28,10 @@ extension ViewController {
                                     self.turkishLirasLabel.text = "TRY: \(turkishLiras)"
                                 }
                                 if let cad = rates["CAD"] as? Double {
-                                    self.cadLabel.text = "USD: \(cad)"
+                                    self.cadLabel.text = "CAD: \(cad)"
                                 }
-                                if let usd = rates["USD"] as? Double {
-                                    self.dolarLabel.text = "USD: \(usd)"
-                                }
-                                if let usd = rates["USD"] as? Double {
-                                    self.dolarLabel.text = "USD: \(usd)"
+                                if let gbp = rates["GBP"] as? Double {
+                                    self.poundLabel.text = "GBP: \(gbp)"
                                 }
                             }
                         }
